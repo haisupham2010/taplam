@@ -71,7 +71,7 @@ function App() {
     // console.log("/k: "+tp_input);
     let adress = tp_input;
     const fetchPokemon = async () => {
-      const response = fetch("http://api.openweathermap.org/data/2.5/weather?q=" + adress + "&units=metric&APPID=80d4d7091327174eeafa40b0e62e740e");
+      const response = fetch("https://api.openweathermap.org/data/2.5/weather?q=" + adress + "&units=metric&APPID=80d4d7091327174eeafa40b0e62e740e");
       response.then((response) => response.json()).then((data) => {
         setis_ketqua(!!data.name);
         console.log("data fetch", !!data.name);
